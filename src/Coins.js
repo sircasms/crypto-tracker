@@ -21,9 +21,9 @@ const Coins = ({
         <p class="coin-price">${price}</p>
         <p class="coin-volume">${volume.toLocaleString()}</p>
         {priceChange > 0 ? (
-          <p className="coin-percent red">{priceChange.toFixed(2)}%</p>
+          <p className="coin-percent green">{priceChange.toFixed(2)}%</p>
         ) : (
-            <p class="coin-percent green">
+            <p class="coin-percent red">
               {isNaN(priceChange) ? priceChange : priceChange.toFixed(2)}%
             </p>
           )}
